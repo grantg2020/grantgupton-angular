@@ -1,0 +1,42 @@
+@default-padding: 10px;
+@primary-color: #0088cb;
+@scale-amount: 0.1;
+@background-color: #1E1E1E;
+@default-text-color: white;
+
+.button {
+    display: inline-block;
+    color: @default-text-color;
+    text-decoration: none;
+    transition: .3s;
+    font-size: 16pt;
+    padding: @default-padding;
+    text-shadow: 0 0 10px @background-color;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.5;
+    }
+
+    &.inverted {
+        color: @background-color;
+        background-color: @default-text-color;
+        padding: @default-padding calc(@default-padding * 2);
+        border-radius: calc(@default-padding * 4);
+        text-shadow: none;
+        box-shadow: 0 0 @default-padding @background-color;
+
+        &:hover {
+            transform: scale(0.95);
+        }
+
+        &.special {
+            background-color: @primary-color;
+            color: @default-text-color;
+        }
+    }
+}
+
+.full-width {
+    width: 200px;
+}

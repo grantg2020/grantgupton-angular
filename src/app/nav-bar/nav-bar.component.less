@@ -1,0 +1,19 @@
+@default-padding: 10px;
+
+.nav-bar {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: @default-padding;
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    .nav-bar {
+        display: none;
+    }
+}
