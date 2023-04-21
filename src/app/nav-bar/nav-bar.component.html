@@ -1,5 +1,6 @@
 <nav class="nav-bar">
     <div class="left">
+        <app-button routerLink="/" *ngIf="!isHome" [content]="'Home'"></app-button>
         <app-button routerLink="/experience" [content]="'Work Experience'"></app-button>
         <app-button routerLink="/projects" [content]="'Projects'"></app-button>
     </div>
