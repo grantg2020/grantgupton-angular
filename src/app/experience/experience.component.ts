@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-experience',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./experience.component.less']
 })
 export class ExperienceComponent {
-
+  @Input() jobTitle: string = "";
+  @Input() companyName: string = "";
+  @Input() companyUrl: string = "";
+  @Input() description: string = "";
 }

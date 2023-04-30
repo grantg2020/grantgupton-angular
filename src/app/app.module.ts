@@ -8,6 +8,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ButtonComponent } from './button/button.component';
 import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { ExperiencesComponent } from './experiences/experiences.component';
+import { CdkAccordionModule } from '@angular/cdk/accordion';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { ExperienceComponent } from './experience/experience.component';
     NavBarComponent,
     ButtonComponent,
     MobileNavComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    ExperiencesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CdkAccordionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
