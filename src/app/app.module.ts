@@ -9,7 +9,7 @@ import { ButtonComponent } from './button/button.component';
 import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
-import { CdkAccordionModule } from '@angular/cdk/accordion';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { CdkAccordionModule } from '@angular/cdk/accordion';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CdkAccordionModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

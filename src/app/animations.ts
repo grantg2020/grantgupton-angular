@@ -5,32 +5,32 @@ import {
 
 export const SlideInOutAnimation = [
     trigger('slideInOut', [
-        state('in', style({
-            'max-height': '500px', 'opacity': '1', 'visibility': 'visible'
+        state('1', style({
+            'max-height': '500px', 'opacity': '1', 'visibility': 'visible',
         })),
-        state('out', style({
-            'max-height': '0px', 'opacity': '0', 'visibility': 'hidden'
+        state('0', style({
+            'max-height': '0px', 'opacity': '0', 'visibility': 'hidden',
         })),
-        transition('in => out', [group([
-            animate('400ms ease-in-out', style({
+        transition('1 => 0', [group([
+            animate('500ms ease-in-out', style({
+                'max-height': '0px',
+            })),
+            animate('500ms ease-in-out', style({
                 'opacity': '0'
             })),
-            animate('600ms ease-in-out', style({
-                'max-height': '0px'
-            })),
-            animate('700ms ease-in-out', style({
+            animate('500ms ease-in-out', style({
                 'visibility': 'hidden'
-            }))
+            })),
         ]
         )]),
-        transition('out => in', [group([
+        transition('0 => 1', [group([
             animate('1ms ease-in-out', style({
                 'visibility': 'visible'
             })),
-            animate('600ms ease-in-out', style({
-                'max-height': '500px'
+            animate('500ms ease-in-out', style({
+                'max-height': '500px',
             })),
-            animate('800ms ease-in-out', style({
+            animate('500ms ease-in-out', style({
                 'opacity': '1'
             }))
         ]

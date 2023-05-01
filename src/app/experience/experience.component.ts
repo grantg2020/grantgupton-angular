@@ -9,5 +9,6 @@ export class ExperienceComponent {
   @Input() jobTitle: string = "";
   @Input() companyName: string = "";
   @Input() companyUrl: string = "";
-  @Input() description: string = "";
+  @Input() description: string[] = [];
+  @Input() tools: string[] = [];
 }

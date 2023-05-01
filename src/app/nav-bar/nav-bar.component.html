@@ -1,4 +1,4 @@
-<nav class="nav-bar">
+<nav class="nav-bar {{ isHome ? 'fadeInAnimation' : ''}}">
     <div class="left">
         <app-button routerLink="/" *ngIf="!isHome" [content]="'Home'"></app-button>
         <app-button routerLink="/experiences" [content]="'Work Experience'"></app-button>

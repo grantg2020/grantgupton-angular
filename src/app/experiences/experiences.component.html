@@ -4,22 +4,27 @@
 <div class="content">
     <h1>Work Experience</h1>
     <p>My professional work experience ranges from mobile app development to web development
-        to giving back by teaching
-        kids to code.</p>
-    <cdk-accordion class="accordion">
-        <cdk-accordion-item *ngFor="let item of items; let index = index;" #accordionItem="cdkAccordionItem"
-            class="accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index"
-            [attr.aria-expanded]="accordionItem.expanded" [attr.aria-controls]="'accordion-body-' + index">
-            <div class="accordion-item-header" (click)="accordionItem.toggle()">
-                <span class="accordion-label-toggle">{{ accordionItem.expanded ? '-' : '+' }}</span>
-                <span class="accordion-label-text">{{ item.jobTitle }}</span>
+        to giving back by teaching kids to code.</p>
 
+    <div class="accordion">
+        <div class="accordion-item" *ngFor="let item of items; let index = index;">
+            <div class="accordion-item-header" (click)="toggleAccordionTab(index)">
+                <span class="accordion-header-label-toggle noselect">{{ animationState[index] ? '-' : '+' }}</span>
+                <h3 class="accordion-header-label-text noselect">
+                    {{ item.jobTitle }}
+                </h3>
             </div>
-            <div class="accordion-item-body" role="region" [style.display]="accordionItem.expanded ? '' : 'none'"
-                [attr.id]="'accordion-body-' + index" [attr.aria-labelledby]="'accordion-header-' + index">
-                <!-- Content Section -->
-                {{ item.description }}
+            <div class="accordion-item-body" [@slideInOut]="animationState[index]">
+                <ul class="accordion-item-body-text noselect">
+                    <li class="accordion-item-body-text-item noselect" *ngFor="let li of item.description">
+                        {{ li }}</li>
+                </ul>
+                <div class="accordion-item-body-tools">
+                    <div class="accordion-item-body-tool-item noselect" *ngFor="let tool of item.tools">
+                        {{ tool }}
+                    </div>
+                </div>
             </div>
-        </cdk-accordion-item>
-    </cdk-accordion>
+        </div>
+    </div>
 </div>

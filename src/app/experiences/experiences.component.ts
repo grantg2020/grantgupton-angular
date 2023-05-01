@@ -11,7 +11,7 @@ import { SlideInOutAnimation } from '../animations';
 })
 export class ExperiencesComponent {
   items: ExperienceComponent[] = [];
-  animationState: string[] = [];
+  animationState: number[] = [];
 
   constructor(private experienceService: ExperienceService) {
 
@@ -19,9 +19,27 @@ export class ExperiencesComponent {
 
   ngOnInit() {
     this.items = this.experienceService.getExperiences();
+
     // init animation states
     for (let index = 0; index < this.items.length; index++) {
-      this.animationState.push('out');
+      this.animationState.push(0);
+    }
+  }
+
+  /**
+   * Toggles an accordion tab
+   * @param index index of accordion tab to animate
+   */
+  toggleAccordionTab(index: number) {
+    // Check for invalid index
+    if (index < 0 || index >= this.animationState.length) return;
+
+    // Toggle animation state
+    this.animationState[index] = this.animationState[index] ? 0 : 1;
+    // Close everything else
+    for (let i = 0; i < this.animationState.length; i++) {
+      if (i != index)
+        this.animationState[i] = 0;
     }
   }
 }
