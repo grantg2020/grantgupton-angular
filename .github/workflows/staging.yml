@@ -27,4 +27,4 @@ jobs:
       with:
         server: ${{ vars.staging_server }}
         username: ${{ secrets.staging_username }}
-        password: ${{ secrets.password }}
+        password: ${{ secrets.staging_password }}
