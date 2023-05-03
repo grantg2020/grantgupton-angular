@@ -27,7 +27,7 @@ jobs:
       #run: 
         #ng test --watch=false --browsers=ChromeHeadless
     
-    - name: Sync files to Staging Site
+    - name: Sync files to Prod Site
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ vars.prod_server }}
