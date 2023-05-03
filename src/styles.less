@@ -4,6 +4,7 @@
 
 @default-padding: 10px;
 @primary-color: #0088cb;
+@secondary-color: #005b88;
 @scale-amount: 0.1;
 @background-color: #1E1E1E;
 @default-text-color: white;
@@ -58,6 +59,27 @@ body {
 }
 
 /// Animations
+.zoomInAnimation {
+    animation: zoomInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.fadeInAnimation {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.slideInAnimation {
+    animation: slideInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
 // Fade In Animation
 @-webkit-keyframes fadeInAnimation {
     .fadeInAnimationFrames;
