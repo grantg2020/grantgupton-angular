@@ -6,7 +6,7 @@ import {
 export const SlideInOutAnimation = [
     trigger('slideInOut', [
         state('1', style({
-            'max-height': '500px', 'opacity': '1', 'visibility': 'visible',
+            'max-height': '1000px', 'opacity': '1', 'visibility': 'visible',
         })),
         state('0', style({
             'max-height': '0px', 'opacity': '0', 'visibility': 'hidden',
@@ -28,7 +28,7 @@ export const SlideInOutAnimation = [
                 'visibility': 'visible'
             })),
             animate('500ms ease-in-out', style({
-                'max-height': '500px',
+                'max-height': '1000px',
             })),
             animate('500ms ease-in-out', style({
                 'opacity': '1'
