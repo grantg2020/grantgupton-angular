@@ -1,4 +1,5 @@
 # GrantGupton.com
+[![Production Release](https://github.com/grantg2020/grantgupton-angular/actions/workflows/production.yml/badge.svg)](https://github.com/grantg2020/grantgupton-angular/actions/workflows/production.yml)
 [![Staging Release](https://github.com/grantg2020/grantgupton-angular/actions/workflows/staging.yml/badge.svg)](https://github.com/grantg2020/grantgupton-angular/actions/workflows/staging.yml)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
