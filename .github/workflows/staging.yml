@@ -3,7 +3,7 @@ name: Staging Release
 on: 
   push:
     branches: [ "develop" ]
-    
+
 jobs:
   web-deploy:
     name: Deploy
@@ -22,9 +22,15 @@ jobs:
         npm install
         npm run build
     
+    # TODO: Enable testing
+    #- name: Test
+      #run: 
+        #ng test --watch=false --browsers=ChromeHeadless
+    
     - name: Sync files to Staging Site
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ vars.staging_server }}
         username: ${{ secrets.staging_username }}
         password: ${{ secrets.staging_password }}
+        local-dir: ./dist/grantgupton
