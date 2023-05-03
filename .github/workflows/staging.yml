@@ -33,4 +33,4 @@ jobs:
         server: ${{ vars.staging_server }}
         username: ${{ secrets.staging_username }}
         password: ${{ secrets.staging_password }}
-        local-dir: ./dist/grantgupton
+        local-dir: ./dist/grantgupton/
