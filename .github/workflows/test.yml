@@ -5,6 +5,7 @@ on:
 
 jobs:
   build:
+    timeout-minutes: 5
     name: Prepare Environment
     runs-on: ubuntu-latest
     steps:
