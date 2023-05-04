@@ -24,4 +24,4 @@ jobs:
         
     - name: Test
       run: 
-        npm test --watch=false --browsers=ChromeHeadless
+        npm run test:headless
