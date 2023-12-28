@@ -1,8 +1,14 @@
 # GrantGupton.com
+[![Production Release](https://github.com/grantg2020/grantgupton-angular/actions/workflows/production.yml/badge.svg)](https://github.com/grantg2020/grantgupton-angular/actions/workflows/production.yml)
 [![Staging Release](https://github.com/grantg2020/grantgupton-angular/actions/workflows/staging.yml/badge.svg)](https://github.com/grantg2020/grantgupton-angular/actions/workflows/staging.yml)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
 
+## SDLC
+This project is managed by using GitHub issues to log bugs and features for the site. Development is completed in feature branches that are branched from develop, which are branched from main. CI/CD has been implemented with GitHub Actions to deploy the staging site when automatically when develop is merged to, and to the production site when main is merged to.
+
+## Website
+This project is built in Angular with LESS for styling. Currently, there is no backend needed.
 
 ## Development server
 
