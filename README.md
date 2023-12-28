@@ -1,6 +1,7 @@
 # GrantGupton.com
 [![Production Release](https://github.com/grantg2020/grantgupton-angular/actions/workflows/production.yml/badge.svg)](https://github.com/grantg2020/grantgupton-angular/actions/workflows/production.yml)
 [![Staging Release](https://github.com/grantg2020/grantgupton-angular/actions/workflows/staging.yml/badge.svg)](https://github.com/grantg2020/grantgupton-angular/actions/workflows/staging.yml)
+[![Automated Tests](https://github.com/grantg2020/grantgupton-angular/actions/workflows/test.yml/badge.svg)](https://github.com/grantg2020/grantgupton-angular/actions/workflows/test.yml)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
 
@@ -9,6 +10,10 @@ This project is managed by using GitHub issues to log bugs and features for the 
 
 ## Website
 This project is built in Angular with LESS for styling. Currently, there is no backend needed.
+### Production Site
+[grantgupton.com](https://www.grantgupton.com)
+### Staging Site
+[staging.grantgupton.com](https://www.staging.grantgupton.com)
 
 ## Development server
 
