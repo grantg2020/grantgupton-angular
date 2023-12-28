@@ -1,8 +1,8 @@
 <nav class="nav-bar {{ isHome ? 'fadeInAnimation' : ''}}">
     <div class="left">
         <app-button routerLink="/" *ngIf="!isHome" [content]="'Home'"></app-button>
-        <a href="https://www.linkedin.com/in/grant-gupton/details/experience/" target="_blank"><app-button routerLink="" [content]="'Work Experience'"></app-button></a>
-        <a href="https://www.linkedin.com/in/grant-gupton/details/projects/" target="_blank"><app-button routerLink="/" [content]="'Projects'"></app-button></a>
+        <app-button href="https://www.linkedin.com/in/grant-gupton/details/experience/" target="_blank" [content]="'Work Experience'"></app-button>
+        <app-button href="https://www.linkedin.com/in/grant-gupton/details/projects/" target="_blank" [content]="'Projects'"></app-button>
     </div>
     <div class="right">
         <app-button routerLink="/contact" [inverted]="true" [content]="'Contact'"></app-button>
