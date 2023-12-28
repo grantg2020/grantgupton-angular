@@ -10,6 +10,7 @@ import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ButtonComponent,
     MobileNavComponent,
     ExperienceComponent,
-    ExperiencesComponent
+    ExperiencesComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
