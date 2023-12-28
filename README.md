@@ -9,6 +9,10 @@ This project is managed by using GitHub issues to log bugs and features for the 
 
 ## Website
 This project is built in Angular with LESS for styling. Currently, there is no backend needed.
+### Production Site
+[grantgupton.com](https://www.grantgupton.com)
+### Staging Site
+[staging.grantgupton.com](https://www.staging.grantgupton.com)
 
 ## Development server
 
