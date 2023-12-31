@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, provideProtractorTestingSupport } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +11,8 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './contact/contact.component';
+import { RouterOutlet, provideRouter } from '@angular/router';
+import { routes } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -27,8 +29,9 @@ import { ContactComponent } from './contact/contact.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    RouterOutlet,
   ],
-  providers: [],
+  providers: [provideRouter(routes), provideProtractorTestingSupport()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
