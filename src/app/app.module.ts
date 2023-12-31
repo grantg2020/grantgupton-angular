@@ -11,7 +11,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './contact/contact.component';
-import { RouterOutlet, provideRouter } from '@angular/router';
+import { RouterModule, RouterOutlet, provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 
 @NgModule({
@@ -30,7 +30,9 @@ import { routes } from './app.routes';
     AppRoutingModule,
     BrowserAnimationsModule,
     RouterOutlet,
+    RouterModule.forRoot(routes)
   ],
+  exports: [RouterModule],
   providers: [provideRouter(routes), provideProtractorTestingSupport()],
   bootstrap: [AppComponent]
 })
