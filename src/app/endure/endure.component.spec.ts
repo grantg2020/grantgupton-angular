@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { EndureComponent } from './endure.component';
+import { EndureNavComponent } from '../endure-nav/endure-nav.component';
+import { ButtonComponent } from '../button/button.component';
 
 describe('EndureComponent', () => {
   let component: EndureComponent;
@@ -8,7 +10,7 @@ describe('EndureComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EndureComponent ]
+      declarations: [ EndureComponent, EndureNavComponent, ButtonComponent ]
     })
     .compileComponents();
 
