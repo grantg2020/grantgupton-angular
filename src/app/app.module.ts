@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule, provideProtractorTestingSupport } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
@@ -11,6 +9,11 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './contact/contact.component';
+import { RouterModule, RouterOutlet, provideRouter } from '@angular/router';
+import { routes } from './app.routes';
+import { EndureComponent } from './endure/endure.component';
+import { EndurePrivacyPolicyComponent } from './endure-privacy-policy/endure-privacy-policy.component';
+import { EndureNavComponent } from './endure-nav/endure-nav.component';
 
 @NgModule({
   declarations: [
@@ -21,14 +24,18 @@ import { ContactComponent } from './contact/contact.component';
     MobileNavComponent,
     ExperienceComponent,
     ExperiencesComponent,
-    ContactComponent
+    ContactComponent,
+    EndureComponent,
+    EndurePrivacyPolicyComponent,
+    EndureNavComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
+    RouterModule.forRoot(routes)
   ],
-  providers: [],
+  exports: [RouterModule],
+  providers: [provideRouter(routes), provideProtractorTestingSupport()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
