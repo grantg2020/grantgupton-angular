@@ -11,6 +11,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './contact/contact.component';
 import { RouterModule, RouterOutlet, provideRouter } from '@angular/router';
 import { routes } from './app.routes';
+import { EndureComponent } from './endure/endure.component';
+import { EndurePrivacyPolicyComponent } from './endure-privacy-policy/endure-privacy-policy.component';
+import { EndureNavComponent } from './endure-nav/endure-nav.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { routes } from './app.routes';
     MobileNavComponent,
     ExperienceComponent,
     ExperiencesComponent,
-    ContactComponent
+    ContactComponent,
+    EndureComponent,
+    EndurePrivacyPolicyComponent,
+    EndureNavComponent
   ],
   imports: [
     BrowserModule,
