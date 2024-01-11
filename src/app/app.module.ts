@@ -14,6 +14,7 @@ import { routes } from './app.routes';
 import { EndureComponent } from './endure/endure.component';
 import { EndurePrivacyPolicyComponent } from './endure-privacy-policy/endure-privacy-policy.component';
 import { EndureNavComponent } from './endure-nav/endure-nav.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { EndureNavComponent } from './endure-nav/endure-nav.component';
     ContactComponent,
     EndureComponent,
     EndurePrivacyPolicyComponent,
-    EndureNavComponent
+    EndureNavComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

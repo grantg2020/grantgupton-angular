@@ -11,7 +11,7 @@
             <div class="accordion-item-header" (click)="toggleAccordionTab(index)">
                 <span class="accordion-header-label-toggle noselect">{{ animationState[index] ? '-' : '+' }}</span>
                 <h3 class="accordion-header-label-text noselect">
-                    {{ item.jobTitle }}
+                    {{ item.jobTitle }} - {{ item.companyName}}
                 </h3>
             </div>
             <div class="accordion-item-body" [@slideInOut]="animationState[index]">

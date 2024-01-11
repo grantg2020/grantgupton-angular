@@ -1,5 +1,6 @@
 @photo-scale: 150px;
 @default-padding: 10px;
+@scale-factor: 1.1;
 
 // Center content
 .center-content {
@@ -30,7 +31,9 @@
         transition: 0.2s;
 
         &:hover {
-            border-radius: calc(@photo-scale / 4);
+            width: calc(@photo-scale * @scale-factor);
+            height: calc(@photo-scale * @scale-factor);
+            border-radius: calc((@photo-scale * @scale-factor) / 2);
         }
     }
 
