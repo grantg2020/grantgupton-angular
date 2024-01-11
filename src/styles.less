@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+
 /** 
  * This file contains css used for all webpages on the site
  */
@@ -8,6 +10,7 @@
 @scale-amount: 0.1;
 @background-color: #1E1E1E;
 @default-text-color: white;
+@mobile-width: 768px;
 
 body {
     margin: auto;
@@ -29,14 +32,14 @@ a {
     z-index: 0;
 
     .top-left-item {
-        position: absolute;
+        position: fixed;
         left: 0;
         top: 0;
         max-width: 50vw;
     }
 
     .bottom-right-item {
-        position: absolute;
+        position: fixed;
         right: 0;
         bottom: 0;
         max-width: 50vw;

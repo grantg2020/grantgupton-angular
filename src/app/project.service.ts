@@ -7,13 +7,13 @@ export class ProjectService {
   private projects = [
     {
       projectTitle: "Endure Fitness",
+      projectColor: "#000000",
       startDate: "August 2020",
-      projectUrl: "https://www.grantgupton.com/endure",
-      description: ["Debugged client projects solving issues with e-commerce websites in Adobe Magento using HTML, CSS, LESS, JavaScript, PHP, and MySQL",
-        "Collaborated with mentor and other developers on a consistent basis about debugging internal ticket",
-        "Documented JavaScript implementation and usage instructions of a new extension"],
+      projectUrl: "/endure",
+      featureImage: "./assets/endure/feature_graphic.png",
+      description: "Endure a tough workout using the app that tracks your muscle goals week to week. Create workouts based on each part of each muscle to optimize growth. An analysis page breaks down what muscles need to be worked out for the week so that you can always stay on track.",
       tools: ["Flutter", "XCode", "Android Studio", "GitHub"]
-    }
+    },
   ];
   constructor() { }
 

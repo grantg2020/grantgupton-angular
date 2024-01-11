@@ -8,3 +8,5 @@
         <app-button routerLink="/contact" [inverted]="true" [content]="'Contact'"></app-button>
     </div>
 </nav>
+
+<app-fullscreen-nav *ngIf="!isHome"></app-fullscreen-nav>

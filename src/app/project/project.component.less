@@ -1,0 +1,58 @@
+@import url("../../styles.less");
+
+@spacing: 10px;
+@project-width: 500px;
+@background-color: #1E1E1E;
+
+.project-item {
+    padding: @spacing;
+    width: @project-width;
+    max-width: calc(100vw - (8 * @spacing));
+    height: 300px;
+    border-radius: @spacing * 2;
+    transition: 0.3s;
+    overflow: hidden;
+    box-shadow: 0 0 @default-padding @background-color;
+    margin: @spacing;
+    
+    h2 {
+        text-align: center;
+    }
+
+    .background {
+        position: relative;
+        display: inline-block;
+        background-size: cover;
+        top: -@spacing;
+        left: -@spacing;
+        width: calc(100% + @spacing * 2);
+        height: calc(100% + @spacing * 2);
+        border-radius: @spacing * 2;
+        transition: 0.3s;
+    }
+
+    &:hover {
+        .background {
+            filter: blur(10px) brightness(50%);
+            transform: scale(1.1);
+        }
+        .content {
+            opacity: 100%;
+        }
+    }
+
+    .content {
+        position: relative;
+        top: -100%;
+        opacity: 0%;
+        transition: 0.3s;
+
+        p {
+            padding: @spacing;
+        }
+
+        li {
+            padding-inline-start: 1em;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@import url("../../styles.less");
+
+@spacing: 10px;
+@photo-scale: 150px;
+
+.toggle {
+    position: relative;
+    z-index: 100;
+    display: none;
+}
+
+.fullscreenPopup {
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    transition: 0.3s;
+
+    h1 {
+        padding-top: calc(@spacing * 3);
+        text-align: center;
+        margin: 0;
+    }
+
+    .closeButton {
+        position: absolute;
+        left: calc(@spacing * 2);
+        top: calc(@spacing * 2);
+    }
+
+    .profile-image {
+        margin-top: calc(@spacing * 3);
+        width: @photo-scale;
+        height: @photo-scale;
+        max-width: 25vw;
+        max-height: 25vw;
+
+        border-radius: calc(@photo-scale / 2);
+
+        animation: zoomInAnimation ease 2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+}
+
+@media screen and (max-width: @mobile-width) {
+    .toggle {
+        display: block;
+    }
+
+    .fullscreenPopup {
+        display: flex;
+    }
+}
