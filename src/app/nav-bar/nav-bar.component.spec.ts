@@ -2,6 +2,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NavBarComponent } from './nav-bar.component';
 import { ButtonComponent } from '../button/button.component';
+import { FullscreenNavComponent } from '../fullscreen-nav/fullscreen-nav.component';
+import { MatIcon } from '@angular/material/icon';
 
 describe('NavBarComponent', () => {
   let component: NavBarComponent;
@@ -9,7 +11,7 @@ describe('NavBarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NavBarComponent, ButtonComponent ]
+      declarations: [ NavBarComponent, ButtonComponent, FullscreenNavComponent, MatIcon ]
     })
     .compileComponents();
 

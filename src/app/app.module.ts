@@ -9,11 +9,16 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './contact/contact.component';
-import { RouterModule, RouterOutlet, provideRouter } from '@angular/router';
+import { RouterModule, provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { EndureComponent } from './endure/endure.component';
 import { EndurePrivacyPolicyComponent } from './endure-privacy-policy/endure-privacy-policy.component';
 import { EndureNavComponent } from './endure-nav/endure-nav.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ProjectComponent } from './project/project.component';
+import { FullscreenNavComponent } from './fullscreen-nav/fullscreen-nav.component';
+import {MatIconModule} from '@angular/material/icon';
+import { EndureFooterComponent } from './endure-footer/endure-footer.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +32,17 @@ import { EndureNavComponent } from './endure-nav/endure-nav.component';
     ContactComponent,
     EndureComponent,
     EndurePrivacyPolicyComponent,
-    EndureNavComponent
+    EndureNavComponent,
+    ProjectsComponent,
+    ProjectComponent,
+    FullscreenNavComponent,
+    EndureFooterComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(routes)
+    MatIconModule,
+    RouterModule.forRoot(routes),
   ],
   exports: [RouterModule],
   providers: [provideRouter(routes), provideProtractorTestingSupport()],

@@ -1,0 +1,8 @@
+<div class="project-item" [ngStyle]="{backgroundColor: projectColor}" routerLink="{{projectUrl}}">
+    <div class="background" [ngStyle]="{background: 'no-repeat center url(' + featureImage + ')'}"></div>
+    <div class="content">
+        <h2 class="noselect">{{ projectTitle }}</h2>
+        <!-- <h3>Started on {{ startDate }}</h3> -->
+        <p class="noselect">{{description}}</p>
+    </div>
+</div>

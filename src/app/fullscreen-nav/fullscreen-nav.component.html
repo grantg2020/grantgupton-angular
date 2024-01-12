@@ -1,0 +1,13 @@
+<div class="toggle fadeInAnimation" cursor="pointer" (click)="isShowing = !isShowing" [ngStyle]="{opacity: isShowing ? '0%' : '100%'}">
+    <mat-icon aria-hidden="false" cursor="pointer" aria-label="menu button" fontIcon="menu"></mat-icon>
+</div>
+<div class="fullscreenPopup" *ngIf="isShowing">
+    <div class="closeButton" (click)="isShowing = !isShowing">
+        <mat-icon aria-hidden="false" cursor="pointer" aria-label="close button" fontIcon="close"></mat-icon>
+    </div>
+
+    <img src="assets/me.jpeg" draggable="false" class="noselect profile-image">
+    <h1 class="slideInAnimation noselect">Grant Gupton</h1>
+
+    <app-mobile-nav [isHome]="false"></app-mobile-nav>
+</div>

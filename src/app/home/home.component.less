@@ -1,5 +1,8 @@
+@import url("../../styles.less");
+
 @photo-scale: 150px;
 @default-padding: 10px;
+@scale-factor: 1.1;
 
 // Center content
 .center-content {
@@ -30,7 +33,9 @@
         transition: 0.2s;
 
         &:hover {
-            border-radius: calc(@photo-scale / 4);
+            width: calc(@photo-scale * @scale-factor);
+            height: calc(@photo-scale * @scale-factor);
+            border-radius: calc((@photo-scale * @scale-factor) / 2);
         }
     }
 
@@ -69,7 +74,7 @@
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: @mobile-width) {
     .center-content {
         h1 {
             font-size: 24pt;
@@ -81,7 +86,7 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: @mobile-width) {
     .center-content {
         flex-direction: column;
 
