@@ -3,12 +3,17 @@
 @spacing: 10px;
 
 .content {
+    h1 {
+        text-align: center;
+    }
+
     position: relative;
     z-index: 100;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: @spacing;
 
     .accordion {
 
@@ -60,7 +65,7 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: @mobile-width) {
     .content {
         .accordion {
             .accordion-item {

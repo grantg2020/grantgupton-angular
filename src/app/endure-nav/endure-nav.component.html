@@ -1,10 +1,11 @@
 <nav class="nav-bar">
     <div class="left">
-        <img routerLink="/endure" draggable="false" class="logo-icon noselect" src="/assets/endure-logo-icon.png">
+        <img routerLink="/endure" draggable="false" class="logo-icon noselect" src="/assets/endure/endure-logo-icon.png">
         <i><app-button class="title" routerLink="/endure" content="ENDURE"></app-button></i>
     </div>
     <div class="right">
+        <app-button routerLink="/projects" [content]="'Projects'"></app-button>
         <app-button routerLink="/endure/privacy-policy" [content]="'Privacy Policy'"></app-button>
-        <app-button routerLink="/contact" [content]="'Contact'"></app-button>
+        <app-button routerLink="/contact" [inverted]="true" [content]="'Contact'"></app-button>
     </div>
 </nav>

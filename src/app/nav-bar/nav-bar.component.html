@@ -1,10 +1,12 @@
 <nav class="nav-bar {{ isHome ? 'fadeInAnimation' : ''}}">
     <div class="left">
         <app-button routerLink="/" *ngIf="!isHome" [content]="'Home'"></app-button>
-        <app-button href="https://www.linkedin.com/in/grant-gupton/details/experience/" target="_blank" [content]="'Work Experience'"></app-button>
-        <app-button href="https://www.linkedin.com/in/grant-gupton/details/projects/" target="_blank" [content]="'Projects'"></app-button>
+        <app-button routerLink="/experiences" [content]="'Work Experience'"></app-button>
+        <app-button routerLink="/projects" [content]="'Projects'"></app-button>
     </div>
     <div class="right">
         <app-button routerLink="/contact" [inverted]="true" [content]="'Contact'"></app-button>
     </div>
 </nav>
+
+<app-fullscreen-nav *ngIf="!isHome"></app-fullscreen-nav>

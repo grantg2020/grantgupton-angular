@@ -1,3 +1,7 @@
+@import url("../../styles.less");
+
+@spacing: 10px;
+
 .content {
     position: relative;
     z-index: 5;
@@ -5,8 +9,40 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 calc(4 * @spacing);
+
+    .app-store-button {
+        width: 160px;
+
+        &.apple {
+            width: 140px;
+            padding: 0 10px;
+        }
+    }
 
     h2 {
         margin-top: 75px;
+    }
+
+    .app-image {
+        height: 80vh;
+        border-radius: calc(@spacing * 2);
+    }
+
+    .inner-content {
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width: @mobile-width) {
+    .content {
+        .inner-content{
+            flex-direction: column;
+    
+            .app-image {
+                display: none;
+            }
+        }
     }
 }

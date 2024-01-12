@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-mobile-nav',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./mobile-nav.component.less']
 })
 export class MobileNavComponent {
-
+  @Input() isHome:boolean = true;
 }

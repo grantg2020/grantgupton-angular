@@ -1,7 +1,9 @@
 <nav class="mobile-nav">
-    <app-button class="slideInAnimation" href="https://www.linkedin.com/in/grant-gupton/details/experience/" target="_blank" [content]="'Work Experience'" [inverted]="true"
+    <app-button *ngIf="!isHome" class="slideInAnimation" routerLink="/" target="_blank" [content]="'Home'" [inverted]="true"
         [fullWidth]="true"></app-button>
-    <app-button class="slideInAnimation" href="https://www.linkedin.com/in/grant-gupton/details/projects/" target="_blank" [content]="'Projects'" [inverted]="true"
+    <app-button class="slideInAnimation" routerLink="/experiences" target="_blank" [content]="'Work Experience'" [inverted]="true"
+        [fullWidth]="true"></app-button>
+    <app-button class="slideInAnimation" routerLink="/projects" [content]="'Projects'" [inverted]="true"
         [fullWidth]="true"></app-button>
     <app-button class="slideInAnimation" routerLink="/contact" [content]="'Contact'" [inverted]="true" [special]="true"
         [fullWidth]="true"></app-button>
