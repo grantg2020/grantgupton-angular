@@ -5,7 +5,7 @@ import { ProjectService } from '../project.service';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.less']
+  styleUrls: ['./projects.component.less'],
 })
 export class ProjectsComponent {
   items: ProjectComponent[] = [];

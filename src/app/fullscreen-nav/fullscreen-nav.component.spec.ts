@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FullscreenNavComponent } from './fullscreen-nav.component';
+import { MatIcon } from '@angular/material/icon';
 
 describe('FullscreenNavComponent', () => {
   let component: FullscreenNavComponent;
@@ -8,7 +9,7 @@ describe('FullscreenNavComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FullscreenNavComponent ]
+      declarations: [ FullscreenNavComponent, MatIcon ]
     })
     .compileComponents();
 
