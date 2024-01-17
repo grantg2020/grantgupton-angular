@@ -4,7 +4,16 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class SmartwatchAppService {
-  private apps = [
+  private fitbitApps = [
+    {
+      title: "Daily",
+      description: "",
+      url: "",
+      icon: "",
+      projectImages: [],
+    }
+  ];
+  private garminApps = [
     {
       title: "Daily",
       description: "",
@@ -16,7 +25,11 @@ export class SmartwatchAppService {
 
   constructor() { }
 
-  getSmartwatchApps(){
+  getFitbitApps(){
+
+  }
+
+  getGarminApps() {
 
   }
 }
