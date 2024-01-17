@@ -1,6 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SmartwatchAppsComponent } from './smartwatch-apps.component';
+import { NavBarComponent } from '../nav-bar/nav-bar.component';
+import { ButtonComponent } from '../button/button.component';
+import { FullscreenNavComponent } from '../fullscreen-nav/fullscreen-nav.component';
+import { MatIcon } from '@angular/material/icon';
 
 describe('SmartwatchAppsComponent', () => {
   let component: SmartwatchAppsComponent;
@@ -8,7 +12,7 @@ describe('SmartwatchAppsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SmartwatchAppsComponent ]
+      declarations: [ SmartwatchAppsComponent, NavBarComponent, ButtonComponent, FullscreenNavComponent, MatIcon ]
     })
     .compileComponents();
 
