@@ -26,6 +26,15 @@
                         {{ tool }}
                     </div>
                 </div>
+                <div class="accordion-item-body-subheader">
+                    <h3 *ngIf="item.projectUrls.length > 0">Links</h3>
+                    <h4>{{ item.dateActive }}</h4>
+                </div>
+                <div class="accordion-item-body-urls">
+                    <div class="accordion-item-body-tool-item noselect" *ngFor="let link of item.projectUrls">
+                        <a href="{{link.url}}" target="_blank">{{ link.title }}</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

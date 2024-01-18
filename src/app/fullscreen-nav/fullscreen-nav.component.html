@@ -1,8 +1,8 @@
-<div class="toggle fadeInAnimation" cursor="pointer" (click)="isShowing = !isShowing" [ngStyle]="{opacity: isShowing ? '0%' : '100%'}">
+<div class="toggle fadeInAnimation" cursor="pointer" (click)="toggle()" [ngStyle]="{opacity: isShowing ? '0%' : '100%'}">
     <mat-icon aria-hidden="false" cursor="pointer" aria-label="menu button" fontIcon="menu"></mat-icon>
 </div>
-<div class="fullscreenPopup" *ngIf="isShowing">
-    <div class="closeButton" (click)="isShowing = !isShowing">
+<div class="fullscreenPopup" *ngIf="isShowing.getValue()">
+    <div class="closeButton" (click)="toggle()">
         <mat-icon aria-hidden="false" cursor="pointer" aria-label="close button" fontIcon="close"></mat-icon>
     </div>
 

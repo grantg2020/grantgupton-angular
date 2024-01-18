@@ -19,6 +19,8 @@ import { ProjectComponent } from './project/project.component';
 import { FullscreenNavComponent } from './fullscreen-nav/fullscreen-nav.component';
 import {MatIconModule} from '@angular/material/icon';
 import { EndureFooterComponent } from './endure-footer/endure-footer.component';
+import { SmartwatchAppsComponent } from './smartwatch-apps/smartwatch-apps.component';
+import { SmartwatchAppComponent } from './smartwatch-app/smartwatch-app.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { EndureFooterComponent } from './endure-footer/endure-footer.component';
     ProjectComponent,
     FullscreenNavComponent,
     EndureFooterComponent,
+    SmartwatchAppsComponent,
+    SmartwatchAppComponent,
   ],
   imports: [
     BrowserModule,

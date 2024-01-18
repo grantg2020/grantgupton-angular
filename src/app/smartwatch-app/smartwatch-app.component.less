@@ -1,0 +1,77 @@
+@import url("../../styles.less");
+
+@icon-size: 32px;
+@spacing: 10px;
+
+.container {
+    position: relative;
+    width: 1200px;
+    max-width: 100%;
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: calc(100% - 2 * @spacing);
+        transition: 0.3s;
+        padding: @spacing;
+
+        border-radius: @spacing;
+
+        &:hover {
+            background-color: @secondary-color;
+        }
+
+        .title {
+            display: flex;
+            align-items: center;
+
+            .icon {
+                width: @icon-size;
+                height: @icon-size;
+                margin-right: @spacing;
+            }
+        }
+
+        p {
+            margin-right: @spacing;
+        }
+
+
+        .slideshow {
+            padding-left: calc(2 * @spacing);
+            .screenshot {
+                // width: 100px;
+                height: 150px;
+                border-radius: @spacing;
+            }
+        }
+
+    }
+
+    .divider {
+        margin-top: 2px;
+        margin-bottom: 2px;
+
+        height: 1px;
+        width: 100%;
+        background-color: grey;
+    }
+}
+
+@media screen and (max-width: @mobile-width) {
+    .container {
+        position: relative;
+
+        .content {
+            flex-direction: column;
+
+            .slideshow {
+                padding-left: 0;
+                text-align: center;
+                display: none;
+            }
+        }
+    }
+}

@@ -10,31 +10,17 @@
     justify-content: center;
     align-items: center;
     margin: 0 calc(4 * @spacing);
-    margin-bottom: 150px;
-
-    .app-store-button {
-        width: 160px;
-
-        &.apple {
-            width: 140px;
-            padding: 0 10px;
-        }
-    }
+    max-width: 90%;
 
     h2 {
         margin-top: 75px;
     }
 
-    .app-image {
-        max-height: 80vh;
-        max-width: 50%;
-        margin-left: calc(4 * @spacing);
-
-        border-radius: calc(@spacing * 2);
-    }
-
     .inner-content {
         display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin-bottom: calc(4 *@spacing);
     }
 }
 
@@ -43,10 +29,6 @@
     .content {
         .inner-content{
             flex-direction: column;
-    
-            .app-image {
-                display: none;
-            }
         }
     }
 }
