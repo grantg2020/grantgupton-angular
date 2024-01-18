@@ -10,5 +10,7 @@ export class ExperienceComponent {
   @Input() companyName: string = "";
   @Input() companyUrl: string = "";
   @Input() description: string[] = [];
+  @Input() dateActive: string = "";
   @Input() tools: string[] = [];
+  @Input() projectUrls: { title: string; url: string; }[] = [];
 }
