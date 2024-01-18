@@ -2,15 +2,21 @@
 
 <div class="content noselect">
     <h1>Smartwatch Apps</h1>
+    <p>Smartwatch apps and watchfaces available for
+        <a target="_blank" href="https://apps.garmin.com/en-US/developer/f45727a7-6b3b-403e-87e1-d27d70492cba/apps">Garmin</a> and
+        <a target="_blank" href="https://gallery.fitbit.com/developer/b1c2faaf-c670-473f-9144-e73fab55fae7">Fitbit</a>
+        watches.
+    </p>
+    <h3 class="slideInAnimation">Fitbit Apps</h3>
     <div class="inner-content">
-        <div>
-            <h2>Smartwatch apps and watchfaces available for Garmin and Fitbit watches.</h2>
-            <a href="https://apps.garmin.com/en-US/developer/f45727a7-6b3b-403e-87e1-d27d70492cba/apps">Garmin</a>
-            <br>
-            <br>
-            <a href="https://gallery.fitbit.com/developer/b1c2faaf-c670-473f-9144-e73fab55fae7">Fitbit</a>
-            <br>
-            <app-smartwatch-app></app-smartwatch-app>
+        <div *ngFor="let app of fitbitApps; let index = index;" class="slideInAnimation" [ngStyle]="{animationDelay: ((index + 1) * 0.2) + 's'}">
+            <app-smartwatch-app [title]="app.title" [description]="app.description" [url]="app.url" [icon]="app.icon" [projectImages]="app.projectImages"></app-smartwatch-app>
+        </div>
+    </div>
+    <h3 class="slideInAnimation" [ngStyle]="{animationDelay: ((fitbitApps.length + 2) * 0.2) + 's'}">Garmin Apps</h3>
+    <div class="inner-content">
+        <div *ngFor="let app of garminApps; let index = index;" class="slideInAnimation" [ngStyle]="{animationDelay: ((fitbitApps.length + index + 2) * 0.2) + 's'}">
+            <app-smartwatch-app [title]="app.title" [description]="app.description" [url]="app.url" [icon]="app.icon" [projectImages]="app.projectImages"></app-smartwatch-app>
         </div>
     </div>
 </div>

@@ -60,6 +60,30 @@
                         color: white;
                     }
                 }
+                .accordion-item-body-urls {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: 10px;
+
+                    .accordion-item-body-tool-item {
+                        padding: @spacing;
+                        margin: calc(@spacing/2);
+                        border-radius: @spacing;
+                        background-color: @secondary-color;
+                        color: white;
+                    }
+                }
+
+                .accordion-item-body-subheader {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-left: calc(@spacing / 2);
+                    margin-right: calc(@spacing / 2);
+
+                    h3, h4 {
+                        margin-bottom: 0;
+                    }
+                }
             }
         }
     }

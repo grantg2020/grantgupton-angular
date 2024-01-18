@@ -1,10 +1,17 @@
-<div class="container">
-    <div>
-        <img class="icon" src="assets/smartwatch-apps/daily/logo.png"><br>
-        <a href="google.com"><h3>Daily</h3></a>
+<div class="container slideInAnimation" [ngStyle]="{animationDelay: ((0 + 1) * 0.2) + 's'}">
+    <div class="content">
+        <div>
+            <div class="title">
+                <img *ngIf="icon != ''" class="icon" draggable="false" src="{{ icon }}"/>
+                <a href="{{ url }}" target="_blank">
+                    <h3>{{ title }}</h3>
+                </a>
+            </div>
+            <p>{{ description }}</p>
+        </div>
+        <div class="slideshow">
+            <img class="screenshot" draggable="false" *ngFor="let image of projectImages; let index = index;" src="{{ image }}"/>
+        </div>
     </div>
-    <div class="slideshow">
-        <img class="screenshot" src="assets/smartwatch-apps/daily/screenshot-1.png">
-    </div>
+    <div class="divider"></div>
 </div>
-<div class="divider"></div>

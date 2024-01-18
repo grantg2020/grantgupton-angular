@@ -9,7 +9,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 This project is managed by using GitHub issues to log bugs and features for the site. Development is completed in feature branches that are branched from develop, which are branched from main. CI/CD has been implemented with GitHub Actions to deploy the staging site when automatically when develop is merged to, and to the production site when main is merged to.
 
 ## Website
-This project is built in Angular with LESS for styling. Currently, there is no backend needed.
+This project is built in Angular with LESS for styling. The website is hosted on HostKoala.
 ### Production Site
 [grantgupton.com](https://www.grantgupton.com)
 ### Staging Site
