@@ -9,3 +9,6 @@ RewriteRule ^ - [L]
 
 # Rewrite everything else to index.html to allow html5 state links
 RewriteRule ^ index.html [L]
+
+# Enforce restriction to file directories
+Options -Indexes
