@@ -1,8 +1,10 @@
 <!-- Nav -->
 <app-nav-bar [isHome]="true"></app-nav-bar>
 
+<app-about-me></app-about-me>
+
 <div class="center-div">
-    <div class="center-content">
+    <div class="center-content" (click)="showPopup()" cursor="pointer">
         <img src="assets/me.jpeg" draggable="false" class="noselect profile-image">
         <div class="noselect text-section">
             <h1>Grant Gupton</h1>
