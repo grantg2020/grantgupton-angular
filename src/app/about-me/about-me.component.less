@@ -1,0 +1,78 @@
+@import url("../../styles.less");
+
+.fullscreen {
+    transition: 300ms;
+    &.hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .container {
+        background-color: @primary-color;
+        padding: calc(@default-padding * 2);
+        border-radius: calc(@default-padding * 2);
+        align-items: center;
+        width: 500px;
+        max-width: 80vw;
+        max-height: 80vh;
+        
+        .head {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .profile-image {
+                width: 30px;
+                height: 30px;
+                border-radius: 15px;
+                margin: @default-padding;
+            }
+        }
+
+        p {
+            overflow-y: scroll;
+            height: 300px;
+            max-height: 80vh;
+
+            scrollbar-color: white transparent;
+
+            /* width */
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+            
+            /* Track */
+            ::-webkit-scrollbar-track {
+                background: transparent;
+            }
+            
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+                background: white;
+            }
+            
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+                background: lightgrey;
+            }
+        }
+
+        .button > a {
+            box-shadow: none !important;
+        }
+    }
+}

@@ -21,6 +21,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { EndureFooterComponent } from './endure-footer/endure-footer.component';
 import { SmartwatchAppsComponent } from './smartwatch-apps/smartwatch-apps.component';
 import { SmartwatchAppComponent } from './smartwatch-app/smartwatch-app.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { SmartwatchAppComponent } from './smartwatch-app/smartwatch-app.componen
     EndureFooterComponent,
     SmartwatchAppsComponent,
     SmartwatchAppComponent,
+    AboutMeComponent,
   ],
   imports: [
     BrowserModule,
