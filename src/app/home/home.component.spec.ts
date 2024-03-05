@@ -4,6 +4,8 @@ import { HomeComponent } from './home.component';
 import { NavBarComponent } from '../nav-bar/nav-bar.component';
 import { MobileNavComponent } from '../mobile-nav/mobile-nav.component';
 import { ButtonComponent } from '../button/button.component';
+import { AboutMeComponent } from '../about-me/about-me.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -11,7 +13,8 @@ describe('HomeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomeComponent, NavBarComponent, MobileNavComponent, ButtonComponent ]
+      imports: [BrowserAnimationsModule],
+      declarations: [ HomeComponent, NavBarComponent, MobileNavComponent, ButtonComponent, AboutMeComponent ]
     })
     .compileComponents();
 
