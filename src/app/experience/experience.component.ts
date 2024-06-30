@@ -12,5 +12,6 @@ export class ExperienceComponent {
   @Input() description: string[] = [];
   @Input() dateActive: string = "";
   @Input() tools: string[] = [];
+  @Input() important: boolean = false;
   @Input() projectUrls: { title: string; url: string; }[] = [];
 }

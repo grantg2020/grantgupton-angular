@@ -9,7 +9,7 @@
     </div>
             
     <div class="accordion">
-        <div class="accordion-item slideInAnimation" *ngFor="let item of items; let index = index;" [ngStyle]="{animationDelay: ((index + 1) * 0.2) + 's'}">
+        <div class="accordion-item slideInAnimation {{ item.important ? 'important' : '' }}" *ngFor="let item of items; let index = index;" [ngStyle]="{animationDelay: ((index + 1) * 0.2) + 's'}">
             <div class="accordion-item-header" (click)="toggleAccordionTab(index)">
                 <span class="accordion-header-label-toggle noselect">{{ animationState[index] ? '-' : '+' }}</span>
                 <h3 class="accordion-header-label-text noselect">
