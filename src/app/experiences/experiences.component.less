@@ -26,6 +26,11 @@
             width: 768px;
             max-width: calc(100vw - (8 * @spacing));
 
+            &.important {
+                background-color: @default-text-color;
+                color: @secondary-color;
+            }
+
             .accordion-item-header {
                 cursor: pointer;
 

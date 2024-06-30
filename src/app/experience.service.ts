@@ -6,6 +6,16 @@ import { Injectable } from '@angular/core';
 export class ExperienceService {
   private experiences = [
     {
+      jobTitle: "Associate Mobile Developer",
+      companyName: "Prometheus Group",
+      dateActive: "June 2024 - Present",
+      companyUrl: "https://www.prometheusgroup.com/",
+      projectUrls: [],
+      description: [],
+      tools: ["C#", "Xamarin", "Jira", "GitLab"],
+      important: true
+    },
+    {
       jobTitle: "Mobile Software Developer",
       companyName: "VetOvation, Inc.",
       dateActive: "July 2023 - August 2023",
@@ -19,7 +29,8 @@ export class ExperienceService {
       description: ["Collaborated with other Computer Science students to review existing app code",
         "Fixed bugs on iOS mobile application in Swift",
         "Deployed updates to Apple App Store"],
-      tools: ["Swift", "GitHub", "App Store Connect"]
+      tools: ["Swift", "XCode", "GitHub", "App Store Connect"],
+      important: false
     },
     {
       jobTitle: "Applications Development Intern",
@@ -34,7 +45,8 @@ export class ExperienceService {
       ],
       description: ["Developed a reference website for continuing care retirement communities using Oracle APEX",
         "Participated in weekly standup meetings to communicate project updates and issues to address"],
-      tools: ["Oracle APEX", "PL/SQL", "JavaScript"]
+      tools: ["Oracle APEX", "PL/SQL", "JavaScript"],
+      important: false
     },
     {
       jobTitle: "Web Development Intern",
@@ -45,7 +57,8 @@ export class ExperienceService {
       description: ["Debugged client projects solving issues with e-commerce websites in Adobe Magento using HTML, CSS, LESS, JavaScript, PHP, and MySQL",
         "Collaborated with mentor and other developers on a consistent basis about debugging internal ticket",
         "Documented JavaScript implementation and usage instructions of a new extension"],
-      tools: ["Jira", "BitBucket", "Adobe Magento", "MySQL", "PHP", "JavaScript", "HTML", "CSS", "LESS"]
+      tools: ["Jira", "BitBucket", "Adobe Magento", "MySQL", "PHP", "JavaScript", "HTML", "CSS", "LESS"],
+      important: false
     },
     {
       jobTitle: "Summer Code Coach",
@@ -56,6 +69,7 @@ export class ExperienceService {
       description: ["Taught students from 6-15 years old in Python, HTML, CSS, JavaScript, and Lua through weekly summer camp",
         "Communicated with parents through emails multiple times a week"],
       tools: ["Python", "HTML", "CSS", "JavaScript", "Lua"],
+      important: false
     },
     {
       jobTitle: "Web Development Intern",
@@ -67,6 +81,7 @@ export class ExperienceService {
         "Reported progress with department lead and other interns to complete tasks efficiently"
       ],
       tools: ["Laravel", "MySQL", "PHP", "JavaScript", "HTML", "CSS"],
+      important: false
     },
     {
       jobTitle: "Mobile Software Developer",
@@ -79,6 +94,7 @@ export class ExperienceService {
         "Improved time management skills by meeting weekly deadlines and participating in weekly meetings"
       ],
       tools: ["Flutter", "Dart", "Firebase"],
+      important: false
     },
     {
       jobTitle: "Website Developer",
@@ -94,6 +110,7 @@ export class ExperienceService {
       description: ["Developed website for TV Series using a custom, modified WordPress theme using JavaScript, HTML, CSS, and PHP",
         "Maintained website database and blog posts"],
       tools: ["Laravel", "MySQL", "PHP", "JavaScript", "HTML", "CSS"],
+      important: false
     },
   ];
   constructor() { }
