@@ -1,0 +1,28 @@
+@import "../../styles.less";
+
+@spacing: 10px;
+
+.content {
+    h1 {
+        text-align: center;
+    }
+
+    flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: @spacing;
+}
+
+@media screen and (max-width: @mobile-width) {
+    .content {
+        
+    }
+}
