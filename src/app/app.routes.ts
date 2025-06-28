@@ -6,6 +6,7 @@ import { EndureComponent } from "./endure/endure.component";
 import { EndurePrivacyPolicyComponent } from "./endure-privacy-policy/endure-privacy-policy.component";
 import { ProjectsComponent } from "./projects/projects.component";
 import { SmartwatchAppsComponent } from "./smartwatch-apps/smartwatch-apps.component";
+import { MusicComponent } from "./music/music.component";
 
 export const routes: Routes = [
     { path: '', component: HomeComponent, title: 'Grant Gupton - Home' },
@@ -16,4 +17,5 @@ export const routes: Routes = [
     { path: 'endure', component: EndureComponent, title: 'Endure' },
     { path: 'endure/privacy-policy', component: EndurePrivacyPolicyComponent, title: 'Endure - Privacy Policy'},
     { path: 'smartwatch-apps', component: SmartwatchAppsComponent, title: 'Smartwatch Apps' },
+    { path: 'music', component: MusicComponent, title: 'Music' },
   ];
