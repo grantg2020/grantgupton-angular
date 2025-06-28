@@ -22,6 +22,7 @@ import { EndureFooterComponent } from './endure-footer/endure-footer.component';
 import { SmartwatchAppsComponent } from './smartwatch-apps/smartwatch-apps.component';
 import { SmartwatchAppComponent } from './smartwatch-app/smartwatch-app.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { MusicComponent } from './music/music.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
     SmartwatchAppsComponent,
     SmartwatchAppComponent,
     AboutMeComponent,
+    MusicComponent,
   ],
   imports: [
     BrowserModule,
