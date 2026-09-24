@@ -12,7 +12,8 @@ describe('MusicComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MusicComponent, NavBarComponent, ButtonComponent, FullscreenNavComponent, MatIcon ]
+      declarations: [ MusicComponent, NavBarComponent, ButtonComponent, FullscreenNavComponent ],
+      imports: [ MatIcon ],
     })
     .compileComponents();
 

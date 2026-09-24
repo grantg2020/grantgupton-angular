@@ -12,7 +12,8 @@ describe('ContactComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContactComponent, NavBarComponent, ButtonComponent, FullscreenNavComponent, MatIcon ]
+      declarations: [ ContactComponent, NavBarComponent, ButtonComponent, FullscreenNavComponent ],
+      imports: [ MatIcon ],
     })
     .compileComponents();
 

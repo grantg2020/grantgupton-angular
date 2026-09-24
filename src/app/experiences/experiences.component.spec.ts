@@ -13,8 +13,8 @@ describe('ExperiencesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BrowserAnimationsModule],
-      declarations: [ ExperiencesComponent, NavBarComponent, ButtonComponent, FullscreenNavComponent, MatIcon ]
+      imports: [ BrowserAnimationsModule, MatIcon ],
+      declarations: [ ExperiencesComponent, NavBarComponent, ButtonComponent, FullscreenNavComponent ]
     })
     .compileComponents();
 

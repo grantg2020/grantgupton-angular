@@ -14,8 +14,8 @@ describe('ProjectsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ProjectsComponent, NavBarComponent, ButtonComponent, ProjectComponent, FullscreenNavComponent, MatIcon ],
-      imports: [AppRoutingModule] 
+      declarations: [ ProjectsComponent, NavBarComponent, ButtonComponent, ProjectComponent, FullscreenNavComponent ],
+      imports: [ MatIcon, AppRoutingModule ]
     })
     .compileComponents();
 

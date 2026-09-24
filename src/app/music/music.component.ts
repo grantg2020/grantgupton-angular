@@ -3,6 +3,7 @@ import { SlideInOutAnimation } from '../animations';
 import { NavBarComponent } from '../nav-bar/nav-bar.component';
 
 @Component({
+  standalone: false,
   selector: 'app-music',
   templateUrl: './music.component.html',
   styleUrls: ['./music.component.less'],

@@ -14,7 +14,8 @@ describe('EndureComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EndureComponent, EndureNavComponent, ButtonComponent, NavBarComponent, EndureFooterComponent, FullscreenNavComponent, MatIcon ]
+      declarations: [ EndureComponent, EndureNavComponent, ButtonComponent, NavBarComponent, EndureFooterComponent, FullscreenNavComponent ],
+      imports: [ MatIcon ],
     })
     .compileComponents();
 

@@ -13,7 +13,8 @@ describe('SmartwatchAppsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SmartwatchAppsComponent, NavBarComponent, ButtonComponent, FullscreenNavComponent, MatIcon, SmartwatchAppComponent ]
+      declarations: [ SmartwatchAppsComponent, NavBarComponent, ButtonComponent, FullscreenNavComponent, SmartwatchAppComponent ],
+      imports: [ MatIcon ]
     })
     .compileComponents();
 

@@ -3,6 +3,7 @@ import { SmartwatchAppService } from '../smartwatch-app.service';
 import { SmartwatchAppComponent } from '../smartwatch-app/smartwatch-app.component';
 
 @Component({
+  standalone: false,
   selector: 'app-smartwatch-apps',
   templateUrl: './smartwatch-apps.component.html',
   styleUrls: ['./smartwatch-apps.component.less']
