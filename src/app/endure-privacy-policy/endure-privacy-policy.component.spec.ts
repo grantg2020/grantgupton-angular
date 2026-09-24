@@ -14,7 +14,8 @@ describe('EndurePrivacyPolicyComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [EndurePrivacyPolicyComponent, ButtonComponent, EndureNavComponent, NavBarComponent, EndureFooterComponent, FullscreenNavComponent, MatIcon]
+      declarations: [EndurePrivacyPolicyComponent, ButtonComponent, EndureNavComponent, NavBarComponent, EndureFooterComponent, FullscreenNavComponent ],
+      imports: [ MatIcon ],
     })
       .compileComponents();
 

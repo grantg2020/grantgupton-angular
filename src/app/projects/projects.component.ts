@@ -3,6 +3,7 @@ import { ProjectComponent } from '../project/project.component';
 import { ProjectService } from '../project.service';
 
 @Component({
+  standalone: false,
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.less'],

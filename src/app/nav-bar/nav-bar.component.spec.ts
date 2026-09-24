@@ -11,7 +11,8 @@ describe('NavBarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NavBarComponent, ButtonComponent, FullscreenNavComponent, MatIcon ]
+      declarations: [ NavBarComponent, ButtonComponent, FullscreenNavComponent ],
+      imports: [ MatIcon ],
     })
     .compileComponents();
 

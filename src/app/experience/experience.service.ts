@@ -10,31 +10,20 @@ export class ExperienceService {
       companyName: 'Stratus Software LLC',
       dateActive: 'July 2025 - Present',
       companyUrl: 'https://www.stratussoftwareco.com/',
-      projectUrls: [
-        {
-          title: 'Learn More',
-          url: 'https://www.stratussoftwareco.com/',
-        },
-      ],
-      description: [
-        'Providing mobile software solutions for startups and small businesses',
-      ],
+      projectUrls: [],
+      description: [],
       tools: ['Swift', 'Kotlin', 'Flutter', 'Dart', 'Jira', 'GitHub'],
       important: true,
     },
     {
       jobTitle: 'Associate Mobile Developer',
-      companyName: 'Prometheus Group',
-      dateActive: 'June 2024 - October 2025',
-      companyUrl: 'https://www.prometheusgroup.com/',
+      companyName: 'profile.png Group',
+      dateActive: 'June 2024 - Present',
+      companyUrl: 'https://www.profile.pnggroup.com/',
       projectUrls: [],
-      description: [
-        'Debug issues for mobile business application',
-        'Migrate Xamarin app to .Net MAUI',
-        'Collaborated with team members to implement new custom Permitting and Safety fields',
-      ],
+      description: [],
       tools: ['C#', 'Xamarin', 'Jira', 'GitLab'],
-      important: false,
+      important: true,
     },
     {
       jobTitle: 'Mobile Software Developer',

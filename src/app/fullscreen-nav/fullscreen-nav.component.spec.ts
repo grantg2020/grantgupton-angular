@@ -9,7 +9,8 @@ describe('FullscreenNavComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FullscreenNavComponent, MatIcon ]
+      declarations: [ FullscreenNavComponent ],
+      imports: [ MatIcon ],
     })
     .compileComponents();
 

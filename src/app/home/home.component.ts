@@ -2,6 +2,7 @@ import { Component, Input, ViewChild } from '@angular/core';
 import { AboutMeComponent } from '../about-me/about-me.component';
 
 @Component({
+  standalone: false,
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.less'],

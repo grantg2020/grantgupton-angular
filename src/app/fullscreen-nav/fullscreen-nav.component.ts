@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 
 @Component({
+  standalone: false,
   selector: 'app-fullscreen-nav',
   templateUrl: './fullscreen-nav.component.html',
   styleUrls: ['./fullscreen-nav.component.less']

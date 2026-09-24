@@ -4,6 +4,7 @@ import { ExperienceComponent } from '../experience/experience.component';
 import { SlideInOutAnimation } from '../animations';
 
 @Component({
+  standalone: false,
   selector: 'app-experiences',
   templateUrl: './experiences.component.html',
   styleUrls: ['./experiences.component.less'],
